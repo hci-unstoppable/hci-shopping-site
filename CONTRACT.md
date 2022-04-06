@@ -20,3 +20,4 @@ By writing your name below, you agree to the terms of this contract as written o
 
 Sean Khuon
 Jakub Urbaniak
+Alexander Pinto
