@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+/*New colors branch*/
+
+/* Color Scheme
+Navy Background: 062F4F
+Gray Text: #DCDCDC
+*/
+html {
+  font-family: "Playfair Display", "Didot", Arial, sans-serif;
+  font-size: 1.25em; /* 20/16 = 1.25*/
+  line-height: 1.375em;  /* 22/16 = 1.375*/
+  color: #DCDCDC;
+  background-color: #062F4F;
+}
+
+header {
+  font-size: 2em; /*32/16 = 2*/
+  line-height: 1.125em; /*18/16 = 2.125*/
+  padding: 0.5em; /*8/16 = .5*/
+  background-color: #2E1114;
+  color: #ADADAD;
+}
+
+#required-personal-information,
+#required-shipping-information,
+#required-payment-information,
+#confirmation,
+#sale-confirmation {
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+  padding: .5em;
+  border: 2px solid #DCDCDC;
+}
+
+#shipping-address,
+#card-information,
+#billing-address {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+
+#personal-information-fields,
+#shipping-information-fields,
+#payment-information-fields,
+#billing-address-fields {
+  display: grid;
+  gap: 1.125em;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#shopping-cart {
+  padding-top: 1.25em;
+  display: flex;
+  justify-content: center;
+}
+
+#items-in-cart,
+#shipping-options {
+  border: 2px solid #DCDCDC;
+  padding: 1em;
+}
+
+@media (min-width: 768px) {
+  fieldset {
+    padding: .5em;
+    border: 2px solid #DCDCDC;
+  }
+
+  #shipping-address,
+  #card-information,
+  #billing-address {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+  }
+
+  #personal-information-fields,
+  #shipping-information-fields,
+  #payment-information-fields,
+  #billing-address-fields {
+    display: grid;
+    gap: 1.5em; /*24/16 = 1.5*/
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #shopping-cart {
+    display: flex;
+    justify-content: center;
+  }
+
+  #items-in-cart,
+  #shipping-options {
+    border: 2px solid #DCDCDC;
+    padding: 1em;
+  }
+
+  #item1,
+  #item2,
+  #item3,
+  #item4 {
+    display: flex;
+    justify-content: center;
+  }
+}
